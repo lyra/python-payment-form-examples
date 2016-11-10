@@ -1,0 +1,21 @@
+<html>
+ <head>
+  <title>PayZen Form Payment Example</title>
+  <style>
+   label {font-weight: bold;width:170px;display:inline-block;text-align:right;padding:2px 10px 2px 0;}
+   input[type=text] {width:350px;}
+  </style>
+ </head>
+ <body>
+  <form action="{{ form.form.action }}" method="{{ form.form.method }}" enctype="{{ form.form.enctype }}" accept-charset="{{ form.form['accept-charset'] }}" />
+   {% for field in form.fields %}
+    <label>{{ field }}</label>
+    <input type="text" readonly="readonly" name="{{ field }}" value="{{ form.fields[field] }}" />
+    <br />
+   {% endfor %}
+   
+   <input type="submit" name="Time To" value="Pay" />
+  </form>
+ </body>
+</html>
+
