@@ -29,7 +29,7 @@ You can also change the `TEST` parameter to `PRODUCTION` to switch to _real_ pay
 
 
 ## Note
-* The documentation used to write this code was [Guide d'implementation formulaire de paiement, v3.4](https://payzen.io)
+* The documentation used to write this code was [Payment form implementation guide, v3.4](https://payzen.io/en-EN/form-payment/standard-payment/sitemap.html)
 
 
 
